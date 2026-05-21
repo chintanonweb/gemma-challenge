@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Gemma 4 Spike</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; background: #0a0a0a; color: #eee; }
+      button { background: #10b981; color: #000; border: 0; padding: 0.6rem 1rem; border-radius: 6px; font-weight: 600; cursor: pointer; }
+      pre { background: #1a1a1a; padding: 1rem; border-radius: 6px; overflow-x: auto; }
+      .pill { display: inline-block; background: #1a1a1a; padding: 0.2rem 0.5rem; border-radius: 999px; font-size: 0.8rem; margin-right: 0.4rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Gemma 4 browser spike</h1>
+    <p>Verifying <code>onnx-community/gemma-4-E4B-it-ONNX</code> loads via WebGPU.</p>
+    <p><span class="pill" id="gpu-status">WebGPU: checking…</span></p>
+    <button id="go">Load model and test</button>
+    <pre id="out" style="white-space:pre-wrap"></pre>
+    <script type="module" src="./test-model.js"></script>
+  </body>
+</html>
